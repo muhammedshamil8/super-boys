@@ -8,12 +8,12 @@
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Shamil - Emea arts & science
+- Member 2: Saleel - Emea arts & science
+- Member 3: Rizwan - Emea arts & science
 
 ### Project Description
-[2-3 lines about what your project does]
+Prediction-corner is a fun web app offering fictional predictions in four categories: "life expectancy," partner compatibility, future children, and marriage odds. With a simple interface and playful graphics, it’s designed for pure amusement, encouraging users to laugh and share.
 
 ### The Problem (that doesn't exist)
 [What ridiculous problem are you solving?]
@@ -37,10 +37,10 @@ For Hardware:
 ### Implementation
 For Software:
 # Installation
-[commands]
+`npm install`
 
 # Run
-[commands]
+`npm run dev`
 
 ### Project Documentation
 For Software:
@@ -87,9 +87,9 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Shamil: Developer
+- Saleel: Designing
+- Rizwan: idea & contents 
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
