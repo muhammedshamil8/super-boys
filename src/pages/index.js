@@ -3,4 +3,8 @@ export { default as Children } from "./Children";
 export { default as Death } from "./Death";
 export { default as Love } from "./Love";
 export { default as Partner } from "./Partner";
-
+export { default as PartnerSuccess } from "./Partner/Page2";
+export { default as PartnerResult } from "./Partner/Result";
+export { default as LoveResult } from "./Love/Result";
+export { default as DeathResult } from "./Death/Result";
+export { default as ChildrenResult } from "./Children/Result";
