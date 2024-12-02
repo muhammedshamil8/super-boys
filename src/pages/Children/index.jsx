@@ -103,10 +103,10 @@ function index() {
           <ArrowBtn />
         </div>
       </div>
-      <div className='p-4'>
+      <div className='p-4 pb-20 mt-10'>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-            <div className='rounded-3xl border shadow-lg bg-white p-4 px-6 border-[#23706C] max-w-[900px] mx-auto mt-10 space-y-6'>
+            <div className='rounded-3xl border shadow-lg bg-white  px-6 border-[#23706C] max-w-[900px] mx-auto  space-y-6 py-10'>
               <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 gap-x-8'>
                 <FormField
                   control={form.control}

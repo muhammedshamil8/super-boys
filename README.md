@@ -74,7 +74,6 @@ For Software:
 
 # Screenshots (Add at least 3)
 
-<img alt="home" width="400" src="https://github.com/muhammedshamil8/super-boys/public/home.png" />
 ![home](https://github.com/muhammedshamil8/super-boys/blob/main/public/home.png?raw=true)
 ![prediction 1](https://github.com/muhammedshamil8/super-boys/blob/main/public/death.png?raw=true)
 ![prediction 2](https://github.com/muhammedshamil8/super-boys/blob/main/public/love.png?raw=true)
