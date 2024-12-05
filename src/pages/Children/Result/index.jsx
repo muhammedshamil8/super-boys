@@ -4,6 +4,7 @@ import { Children_predictor} from '@/assets/images';
 import ArrowBtn from '@/components/HomeButton';
 import {  Vchildren } from '@/assets/images/vectors';
 function index() {
+    const name = localStorage.getItem('children');
     return (
         <motion.div
             className='relative min-h-screen z-20 flex flex-col select-none'
@@ -28,7 +29,7 @@ function index() {
                     <div className="flex flex-col sm:grid sm:grid-cols-2  h-full space-y-6 md:space-y-0 flex-1 flex-grow">
                     <div className="flex flex-col justify-start items-center  sm:pt-10">
                             <p className="text-lg text-[#333333] font-semibold">
-                                <span className='font-bold'>Hey Name,</span><br />First learning, then enough<br />invention......
+                                <span className='font-bold'>Hey {name},</span><br />First learning, then enough<br />invention......
                             </p>
                         </div>
                         <div className="flex justify-end items-end">

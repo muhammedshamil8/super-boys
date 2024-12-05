@@ -27,14 +27,8 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 
+import { useToast } from "@/hooks/use-toast"
 const formSchema = z.object({
   name: z.string()
     .min(2, { message: "Name must be at least 2 characters long." })
@@ -65,7 +59,7 @@ const formSchema = z.object({
 
 function index() {
   const navigate = useNavigate();
-
+  const { toast } = useToast()
   const handleNextStage = () => {
     onSubmit();
   }
@@ -82,6 +76,14 @@ function index() {
 
   function onSubmit(values) {
     console.log(values)
+    if (!values) {
+      toast({
+        title: "Please fill all the fields",
+        variant: "destructive",
+      })
+      return;
+    }
+    localStorage.setItem('children', JSON.stringify(values.name));
     navigate('/children-predictor/result');
   }
 

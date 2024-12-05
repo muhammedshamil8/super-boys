@@ -34,6 +34,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { useToast } from "@/hooks/use-toast"
+
 
 const formSchema = z.object({
   name: z.string()
@@ -56,7 +58,7 @@ const formSchema = z.object({
 
 function index() {
   const navigate = useNavigate();
-
+  const { toast } = useToast()
   const handleNextStage = () => {
     onSubmit();
   }
@@ -72,6 +74,15 @@ function index() {
 
   function onSubmit(values) {
     console.log(values)
+    if (!values.name || !values){
+      toast({
+        title: "Error",
+        message: "Please fill all the fields",
+        variant: "destructive",
+      })
+      return;
+    }
+    localStorage.setItem('death', JSON.stringify(values?.name));
     navigate('/death-predictor/result');
   }
 

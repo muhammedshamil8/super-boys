@@ -4,6 +4,7 @@ import { Death } from '@/assets/images';
 import ArrowBtn from '@/components/HomeButton';
 import { Vdeath } from '@/assets/images/vectors';
 function index() {
+    const name = localStorage.getItem('death');
     return (
         <motion.div
             className='relative min-h-screen z-20 flex flex-col select-none'
@@ -28,7 +29,7 @@ function index() {
                     <div className="flex flex-col sm:grid sm:grid-cols-2  h-full space-y-6 md:space-y-0 flex-1 flex-grow">
                         <div className="flex flex-col justify-start items-center  sm:pt-10">
                             <p className="text-lg text-[#333333] font-semibold">
-                                <span className='font-bold text-3xl text-[#AA0E0E]'>Your Death <br />Date is</span><br />
+                                <span className='font-bold text-3xl text-[#AA0E0E]'>Hey {name} , Your  Death <br />Date is</span><br />
                                 <div className='bg-[#AA0E0E] text-white text-2xl font-bold rounded-lg p-2 mt-2 w-fit px-10'>Not Available</div>
                             </p>
                         </div>

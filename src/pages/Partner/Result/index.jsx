@@ -4,6 +4,7 @@ import { Death, Children_predictor, Love_Calculator, Partner } from '@/assets/im
 import ArrowBtn from '@/components/HomeButton';
 import { Vpartner } from '@/assets/images/vectors';
 function index() {
+    const name = localStorage.getItem('partner');
     return (
         <motion.div
             className='relative min-h-screen z-20 flex flex-col select-none'
@@ -35,7 +36,7 @@ function index() {
                         </div>
                         <div className="flex flex-col justify-start  sm:pt-10">
                             <p className="text-lg text-[#333333] font-semibold">
-                                <span className='font-bold'>Hey Name,</span><br />You will never get a Partner<br />from this world...
+                                <span className='font-bold'>Hey {name},</span><br />You will never get a Partner<br />from this world...
                             </p>
                         </div>
 

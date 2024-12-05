@@ -4,6 +4,7 @@ import { Love_Calculator} from '@/assets/images';
 import ArrowBtn from '@/components/HomeButton';
 import { Vlove } from '@/assets/images/vectors';
 function index() {
+    const name = localStorage.getItem('love');
     return (
         <motion.div
             className='relative min-h-screen z-20 flex flex-col select-none'
@@ -35,7 +36,7 @@ function index() {
                         </div>
                         <div className="flex flex-col justify-start  sm:pt-10">
                             <p className="text-lg text-[#333333] font-semibold">
-                                <span className='font-bold'>Hey Name,</span><br />Your partner is fake, it will hurt a little to hear, bear<br />with it....
+                                <span className='font-bold'>Hey {name},</span><br />Your partner is fake, it will hurt a little to hear, bear<br />with it....
                             </p>
                         </div>
 
